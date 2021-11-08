@@ -52,3 +52,28 @@ def func_quadratic(data_lst):
     
 func_quadratic(['a', 'b', 'c', 'd', 'e'])
 
+# Worst Case vs Best Case
+def matcher(lst, match):
+    '''
+    For a list lst, return a boolean indicating if match item is in the list.
+    '''
+
+    for item in lst:
+        if item == match:
+            return True
+    return False
+
+print(matcher(['a', 'b', 'c', 'd', 'e'], 'a')) # This is the best case because it is the first item in the list at index 0. O(1) Best Case becomes a constant
+print(matcher(['a', 'b', 'c', 'd', 'e'], 'l')) # Worst case, entire list must be searched, n elements. O(n) Worst Case becomes linear
+
+
+# Space complexity
+def memory (n=10):
+    ''' 
+    Prints "hello world n times"
+    '''
+
+    for x in range(n): # Time complexity is O(n)
+        print('Memory!') # Space complexity is O(1)
+
+memory()
