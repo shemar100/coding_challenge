@@ -19,3 +19,16 @@ def func_linear(data_lst):
         print(val)
 
 func_linear(['a', 'b', 'c', 'd', 'e'])
+
+
+# O(n^2) Quadratic
+def func_quadratic(data_lst):
+    '''
+    Prints the first n items in a list of values.
+    '''
+    for item1 in data_lst:
+
+        for item2 in data_lst:
+            print(item1, item2)
+    
+func_quadratic(['a', 'b', 'c', 'd', 'e'])
