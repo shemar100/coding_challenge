@@ -68,7 +68,7 @@ print(matcher(['a', 'b', 'c', 'd', 'e'], 'l')) # Worst case, entire list must be
 
 
 # Space complexity
-def memory (n=10):
+def memory (n):
     ''' 
     Prints "hello world n times"
     '''
@@ -76,4 +76,4 @@ def memory (n=10):
     for x in range(n): # Time complexity is O(n)
         print('Memory!') # Space complexity is O(1)
 
-memory()
+memory(10)
