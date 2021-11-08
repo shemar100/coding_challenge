@@ -17,7 +17,9 @@ import sys
 
 def sockMerchant(n, ar):
     # Write your code here
+    # Sorts the data structure in ascending order
     ar.sort()
+    #
     pairs = 0
     count = 1
     color = ar[0]
