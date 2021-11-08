@@ -20,8 +20,27 @@ def func_linear(data_lst):
 
 func_linear(['a', 'b', 'c', 'd', 'e'])
 
+def comp(lst):
+    '''
+    This function prints the first item 0(1) it is a costant
+    Then it prints the first half of the list
+    Then prints a string 10 times 0(10) it is a constant
+    '''
+
+    print(lst[0])
+
+    midpoint = len(lst) // 2
+
+    for val in lst[:midpoint]:
+        print(val)
+    
+    for x in range(10):
+        print('number')
+    
+comp(['a', 'b', 'c', 'd', 'e'])
 
 # O(n^2) Quadratic
+# With algorithms that has a Quadratic time complexity, the growth of the input has a computational intesnity at a quadratic rate
 def func_quadratic(data_lst):
     '''
     Prints the first n items in a list of values.
@@ -32,3 +51,4 @@ def func_quadratic(data_lst):
             print(item1, item2)
     
 func_quadratic(['a', 'b', 'c', 'd', 'e'])
+
